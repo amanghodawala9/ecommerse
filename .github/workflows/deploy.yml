@@ -25,6 +25,8 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
+          git config --global user.email "amanghodawala9@gmail.com"
+            git config --global user.name "amanghodawala9"
           npm install -g angular-cli-ghpages @angular/cli
           ng add angular-cli-ghpages --skip-confirmation
           ng deploy
