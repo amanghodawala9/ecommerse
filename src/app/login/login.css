@@ -1,0 +1,33 @@
+.container-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  color: white;
+  gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  background-color: #3700B3;
+  padding: 1.25rem;
+}
+
+.login-box input {
+  flex: 1;
+  background-color: gray;
+  position: relative;
+  right: 0;
+  font-size: 1.25rem;
+}
+
+.input-field {
+  display: flex;
+  gap: 10px;
+}
+
+table {
+  border-spacing: 0 10px;
+}

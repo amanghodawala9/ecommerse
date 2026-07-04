@@ -1,0 +1,16 @@
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: darkslategray;
+  padding: 20px;
+}
+

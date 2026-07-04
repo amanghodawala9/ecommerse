@@ -1,0 +1,27 @@
+@if(!isLoading()) {
+  @if(alreadyLogin()) {
+    <h1>You are already logged in!</h1>
+    Click <a routerLink="/">here</a> to go back home
+  }
+  @else {
+    <div>Test Username: kate_h</div>
+    <div>Test Password: {{'kfejk@*_'}}</div>
+    <div class="container-login">
+      <div class="login-box">
+        <h1>Login</h1>
+        <table>
+          <tr>
+            <td><label>Username: </label></td>
+            <td><input type="text" [(ngModel)]="username" /></td>
+          </tr>
+          <tr>
+            <td><label>Password: </label></td>
+            <td><input type="password" [(ngModel)]="password" /></td>
+          </tr>
+        </table>
+        <button type="button" (click)="login()">Login</button>
+      </div>
+    </div>
+  }
+}
+<app-popup [isVisible]="showPopup()" [message]="popupMessage()" [hasError]="loginFailed()"></app-popup>

@@ -1,0 +1,47 @@
+.container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10rem;
+}
+
+.container img {
+  width: 250px;
+  height: 250px;
+}
+
+.product div {
+  margin: 5px;
+}
+
+.product .description {
+  font-weight: bold;
+}
+
+.product .price {
+  color: darkgreen;
+}
+
+.product button {
+  font-size: large;
+}
+
+.product button:hover {
+  color: white;
+  background-color: purple;
+}
+
+.closeButton {
+  color: darkred;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-container input {
+  font-size: large;
+}
