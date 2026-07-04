@@ -25,7 +25,7 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          npm install -g angular-cli-ghpages
+          npm install -g angular-cli-ghpages @angular/cli
           ng deploy --base-href=/ecommerse/
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
